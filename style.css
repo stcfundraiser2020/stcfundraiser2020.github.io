@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,400i,500,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    /*padding-right: 5%;*/
+    padding-left: 0%;
+    background-color: Transparent;
+  }
+
+#bg{
+    top: -1%;
+    position: fixed;
+    z-index: -99;   
+    max-width: 100%; 
+}
+
+.nav__links {   
+    list-style: none;
+    display: flex;
+    justify-items: flex-end;
+    }
+
+.nav__links a {
+    padding: 0px 40px;
+    font-family: "Muli";
+    font-weight: 700;
+    font-size: 4vh;
+    color: #2D7EB6;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    }
+
+.nav__links a:hover {
+    color: Black;
+    }
+
+.box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-around;
+    /* height: 100vh; */
+}
+
+.logos{
+    margin-top: 3vh;
+    z-index: -2;
+    max-width: 5vh;
+}
+
+#scrolldown{
+    display: none;
+}
+
+#ru_logo{
+    max-width: 42%;
+}
+
+#sc_logo{
+    max-width: 23%;
+    padding-bottom: 10%;
+}
+
+#About{
+    border: 0;
+    margin-top: 10vh;
+    background:white;
+    z-index: 2;
+    display: flex;
+    height: 110%;
+    max-width: 110vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.about_content{
+    padding: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#block{
+    width: 40%;
+    height: auto;
+}
+
+#info{
+    padding-left: 8%;
+    padding-top: 3%;
+    width: 45%;
+    height: auto;
+}
+
+#learnmore{
+    margin-top: 6%;
+    padding-top: 1%;
+    font-family: "Muli";
+    font-weight: 800;
+    font-style: bold;
+    color: #2D7EB6;
+    font-size: 110%;
+    cursor: pointer;
+    width: 20%;
+    height: 5vh;
+    border-radius: 999px;
+    border: 2px solid #2D7EB6;
+    font-family: "Muli";
+    letter-spacing: 0.1em; 
+    font-weight: 800;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#Info{
+    border: 0;
+    background: #F7FEFD;
+    z-index: 2;
+    display: flex;
+    height: 110%;
+    max-width: 110vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#info_box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#photo{
+    max-width: 60vh;
+}
+
+#meetingtext{
+    padding-top: 10vh;
+    max-width: 70%;
+    font-family: "Muli";
+    font-weight: 500;
+    font-size: 120%;
+    color: #000000;
+    text-align: center;
+}
+
+#Visit{
+    border: 0;
+    background: #F7FEFD;
+    z-index: 2;
+    display: flex;
+    height: 150%;
+    max-width: 110vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#visitcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#adella{
+    max-width: 70vw;
+    padding-bottom: 15vh;
+}
+
+#visitimage{
+    max-width: 50%;
+    padding-bottom: 15vh;
+}
+
+#adellaquote{
+    max-width: 50%;
+    padding-bottom: 20%;
+}
+
+#Goal{
+    z-index: 2;
+    position: relative;
+    height: 120vh;
+    background:#E9FBFF;
+    display: flex;
+    max-width: 110vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.frame{
+    width: 55vw;
+    height: 65vh;
+    padding-bottom: 4%;
+}
+
+#story{
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#ourgoal{
+    font-family: "Muli";
+    font-weight: 700;
+    font-size: 220%;
+    color: black;
+}
+
+#Donate{
+    z-index: 2;
+    position: relative;
+    height: 110vh;
+    background:#fed8a7;
+    display: flex;
+    max-width: 110vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#dtp{
+    font-family: "Muli";
+    font-weight: 700;
+    font-size: 300%;
+    color: #000000;
+}
+
+#empha1{
+    font-family: "Muli";
+    font-weight: 800;
+    font-style: bold;
+    color: #2D7EB6;
+    font-size: 400%; 
+}
+
+#empha2{
+    font-weight: 800;
+    color: #2D7EB6;
+}
+
+#paypal_logo{
+    margin-top: 12%;
+    height: auto;
+    width: 110vh;
+    border-radius: 999px;
+}
+
+#paypal_logo:hover{
+    margin-top: 13%;
+    height: auto;
+    width: 105vh;
+    border-radius: 999px;
+}
+
+#paypal_logo2{
+    display: none;
+}
+
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#ru, #pdf{
+    width: 24%;
+    height: 5.5vh;
+    line-height: 5vh;
+    margin-top: 10%;
+    border-radius: 999px;
+    border: 2px solid #2D7EB6;
+    font-family: "Muli";
+    letter-spacing: 0.1em; 
+    font-weight: 800;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 17px;
+    color: #262626;
+    text-decoration: none;
+    background: transparent;
+    background-image: url('Images/wave2.png');
+    background-repeat: repeat-x;
+    background-position: 0 -80%;
+    transition: 1.5s;
+}
+        
+#ru:hover, #pdf:hover{
+    transition: 1.5s ease-out;
+    background-position: 500% 100%;
+}
+
+#id{
+    font-family: "Muli";
+    font-weight: 900;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    height: 18%;
+    max-width: 110vw;
+    background-color: #f9fcfd;
+    align-items: center;
+}
+
+#ftext{
+    color: Black;
+    font-family: Muli;
+    font-size: 3vh;
+    font-weight: 600;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.fa {
+    padding: 0% 6%;
+    font-size: 4vh;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2%;
+    transition: all 0.3s ease 0s;
+}
+
+.fa:hover, #up:hover{
+    opacity: 0.7;
+    color: #EE3120;
+}
+
+.fa-instagram, .fa-google, .fa-facebook {
+    background: Transparent;
+    color: black;
+}
+
+#up {
+    text-decoration: none;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 1vh;
+    right: 2%; 
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: Transparent; /* Set a background color */
+    color: black; /* Text color */
+    font-size: 350%;
+    cursor: pointer; /* Add a mouse pointer on hover */
+}
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+    #ru, #pdf{
+        width: 38%;
+    }
+    #ftext{
+        color: Black;
+        font-family: Muli;
+        font-size: 2.5vh;
+        font-weight: 600;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1366px) 
+and (orientation : portrait) {
+    #bg{
+        height: 400%;
+    }
+    #ru, #pdf{
+        width: 38%;
+        height: auto;
+    }
+    #paypal_logo{
+        display: none;
+    }
+    #paypal_logo2{
+        display: block;
+        max-width: 65vw;
+        margin-top: 12%;
+        height: auto;
+        border-radius: 999px;
+    }
+    #block{
+        width: 80%;
+        height: auto;
+    }
+    #info{
+        padding-top: 7%;
+        width: 90%;
+        height: auto;
+    }
+    #ftext{
+        color: Black;
+        font-family: Muli;
+        font-size: 2.5vh;
+        font-weight: 600;
+    }
+    #home{
+        background-color: #e2f3f5;
+        width: 100vh;
+    }
+    #learnmore{
+        margin-top: 1%;
+    }
+    #visitimage{
+        max-width: 85%;
+        padding-bottom: 10vh;
+    }
+    #adellaquote{
+        max-width: 80%;
+        padding-bottom: 2vh;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    header{
+        justify-content: center;
+        padding-top: 7vh;
+    }
+    #bg{
+        height: 400%;
+    }
+    footer{
+        height: 22%;
+    }
+    #block{
+        width: 80%;
+        height: auto;
+    }
+    
+    #info{
+        padding-top: 3%;
+        width: 90%;
+        height: auto;
+    }
+    #ru_logo{
+        max-width: 80%;
+    }
+    .nav__links a {
+        padding: 0px 50px;
+    }
+    #sc_logo{
+        max-width: 50%;
+        padding-bottom: 15%;
+    }
+    #scrolldown{
+        display: block;
+        font-family: Muli;
+        font-size: 120%;
+        font-weight: 700;
+        color: #2D7EB6;
+        padding-bottom: 8%;
+    }
+    #ftext{
+        padding: 3%;
+        color: Black;
+        font-family: Muli;
+        font-size: 3vh;
+        font-weight: 600;
+    }
+    #home{
+        background-color: #e2f3f5;
+        width: 100vh;
+    }
+    #ftext{
+        color: Black;
+        font-family: Muli;
+        font-size: 2vh;
+        font-weight: 600;
+    }
+    #learnmore{
+        width: 53%;
+    }
+    .logos{
+        margin-top: 6vh;
+    }
+    #dtp, #ourgoal{
+        font-family: "Muli";
+        font-weight: 700;
+        font-size: 3.5vh;
+        color: #000000;
+    }
+    #paypal_logo{
+        display: none;
+    }
+    #paypal_logo2{
+        display: block;
+        max-width: 75vw;
+        margin-top: 12%;
+        height: auto;
+        border-radius: 999px;
+    }
+    #up{
+        display: none;
+    }
+    #ru, #pdf{
+        width: 60%;
+        height: auto;
+        line-height: 5vh;
+        margin-top: 10%;
+        border-radius: 999px;
+        border: 2px solid #2D7EB6;
+        font-family: "Muli";
+        letter-spacing: 0.1em; 
+        font-weight: 800;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 14px;
+        color: #262626;
+        text-decoration: none;
+        background: transparent;
+    }
+    #photo{
+        margin-top: -40%;
+        max-width: 40vh;
+    }
+    #meetingtext{
+        font-size: 95%;
+        padding-bottom: 10vh;
+    }
+
+    #ourgoal{
+        font-size: 110%;
+        padding-top: 10%;
+        text-align: center;
+        /* padding-left: 5%; */
+    }
+    #dtp{
+        padding-left: 8%;
+        font-family: "Muli";
+        font-weight: 700;
+        font-size: 330%;
+        color: #000000;
+        padding-bottom: 5%
+    }
+    #empha1::after{
+        padding-top: 2%;
+        content: "\A";
+        white-space: pre-line;
+    }
+    #empha1{
+        padding-top: 5%;
+        font-weight: 800;
+        color: #2D7EB6;
+    }
+    #empha2{
+        font-weight: 800;
+        color: #2D7EB6;
+    }
+    .nav__links a {
+        font-size: 3vh;
+    }
+    .frame{
+        width: 80vw;
+        height: 65vh;
+        padding-bottom: 4%;
+    }
+}
